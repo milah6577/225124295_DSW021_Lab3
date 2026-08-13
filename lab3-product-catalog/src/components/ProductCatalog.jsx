@@ -14,7 +14,7 @@ function ProductCatalog() {
   },[]);*/ 
 
   useEffect(()=>{
-    fetch('https://fakestoreapi.com/products ')  
+    fetch('https://fakestoreapi.com/products')  
     .then(response=> response.json())
     .then(jsonData=> setProducts(jsonData))
     .catch(()=> setError("Failed to load products.")) 
